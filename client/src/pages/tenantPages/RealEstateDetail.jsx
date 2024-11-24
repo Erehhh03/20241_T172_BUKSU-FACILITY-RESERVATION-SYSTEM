@@ -73,7 +73,7 @@ const RealEstateDetail = () => {
     const emailTemplate = {
       to: realEstate?.propertyOwner?.email,
       from: user?.email,
-      subject: `Rental of Property with ID: ${realEstate?.propertyId}`,
+      subject: `Rental of Facility with ID: ${realEstate?.propertyId}`,
       body: `<p>Hi ${realEstate?.propertyOwner?.firstName} ${realEstate?.propertyOwner?.lastName},</p>
       <p>I am interested in renting your property titled <strong>${realEstate?.title}</strong> with ID: ${realEstate?.propertyId}.</p>
       <p>Kindly contact me at ${user?.email} or +977 ${user?.phoneNumber}.</p>
@@ -196,7 +196,7 @@ const RealEstateDetail = () => {
               <div className="flex mt-2 gap-2 items-center">
                 <span className="font-semibold"> Subject: </span>
                 <p>
-                  Rental of Property with ID:{" "}
+                  Rental of Facility with ID:{" "}
                   <span className="text-sm">{realEstate?.propertyId}</span>
                 </p>
               </div>
@@ -209,7 +209,7 @@ const RealEstateDetail = () => {
                   </p>
                   <br />
                   <p>
-                    I am interested in renting your property titled{" "}
+                    I am interested in booking Facility titled{" "}
                     <strong>{realEstate?.title}</strong> with ID:{" "}
                     {realEstate?.propertyId}.
                   </p>
