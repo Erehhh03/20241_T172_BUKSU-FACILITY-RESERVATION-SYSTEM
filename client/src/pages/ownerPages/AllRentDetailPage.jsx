@@ -23,14 +23,22 @@ const AllRentDetailPage = () => {
   if (allRentDetails?.length === 0)
     return (
       <div className="flex flex-col items-center h-screen mt-12 gap-4">
+<<<<<<< HEAD
         <h1 className="text-center">No Booking details found</h1>
+=======
+        <h1 className="text-center">No rent details found</h1>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         <Button
           variant="contained"
           onClick={() => navigate("/owner/rentDetail/create")}
           sx={{ color: "#fff" }}
           startIcon={<AddCircleOutlineIcon />}
         >
+<<<<<<< HEAD
           Create Booking Detail
+=======
+          Create Rent Detail
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Button>
       </div>
     );

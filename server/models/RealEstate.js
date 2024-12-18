@@ -81,7 +81,11 @@ const RealEstateSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide a category for the property"],
       enum: {
+<<<<<<< HEAD
         values: ["Hall", "Quadrangle","Theater"],
+=======
+        values: ["House", "Apartment", "Room", "Shop Space", "Office Space"],
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         message: "{VALUE} is not in the category list",
       },
     },

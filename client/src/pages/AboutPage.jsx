@@ -1,7 +1,12 @@
 import { useSelector } from "react-redux";
 import { Header, Logo, Footer } from "../components";
+<<<<<<< HEAD
 import about1 from "../assets/images/gsu.png";
 import about2 from "../assets/images/student.png";
+=======
+import about1 from "../assets/images/about1.svg";
+import about2 from "../assets/images/about2.svg";
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 import { Link } from "react-router-dom";
 
 const AboutPageComponent = () => {
@@ -77,10 +82,17 @@ const AboutPage = () => {
 
               <div className="flex flex-col ml-3 justify-center">
                 <h1 className="font-display text-xl md:text-2xl">
+<<<<<<< HEAD
                 General Service Unit Facility Booking
                 </h1>
                 <p className="text-xs md:text-sm">
                   Prepared by : MCP GROUP
+=======
+                  Rent Manager
+                </h1>
+                <p className="text-xs md:text-sm">
+                  Find and Manage your rentals in one place
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 </p>
               </div>
             </div>
@@ -99,7 +111,11 @@ const AboutPage = () => {
           </div>
           <hr className="my-6 border-gray-700 sm:mx-auto  lg:my-8" />
           <span className="block text-sm  sm:text-center ">
+<<<<<<< HEAD
             2024 |{" "}
+=======
+            2023 |{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             <Link to="/" className="hover:underline">
               Property Plus
             </Link>

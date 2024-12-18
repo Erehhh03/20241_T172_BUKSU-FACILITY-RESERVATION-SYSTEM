@@ -19,7 +19,11 @@ const SavedRealEstate = () => {
   if (allRealEstate?.length === 0)
     return (
       <h1 className="text-center mt-8 mb-6 font-heading">
+<<<<<<< HEAD
         No Facility Saved
+=======
+        No Real Estate Saved
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
       </h1>
     );
 

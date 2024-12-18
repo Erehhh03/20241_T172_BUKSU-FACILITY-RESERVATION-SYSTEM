@@ -93,6 +93,7 @@ const SingleRentDetail = () => {
               <p className="-ml-1 text-base tracking-tight">
                 <LocationOnOutlinedIcon sx={{ color: "#019149" }} />
                 {rentDetail?.realEstate?.address?.location},{" "}
+<<<<<<< HEAD
                 {rentDetail?.realEstate?.address?.streetName}
               </p>
             </div>
@@ -100,6 +101,15 @@ const SingleRentDetail = () => {
               <p className="font-roboto leading-4 ">Rent per USE</p>
               <span className="font-semibold text-lg">
                 PHP {format(rentDetail?.realEstate?.price)}
+=======
+                {rentDetail?.realEstate?.address?.streetName} ,Kathmandu
+              </p>
+            </div>
+            <div className="mt-4 text-primaryDark">
+              <p className="font-roboto leading-4 ">Rent per month</p>
+              <span className="font-semibold text-lg">
+                NPR. {format(rentDetail?.realEstate?.price)}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </span>
             </div>
             <div className="mt-4">
@@ -109,6 +119,7 @@ const SingleRentDetail = () => {
               </p>
               <p className="font-robotoNormal">
                 <span className="font-medium">Current Rent Date:</span>{" "}
+<<<<<<< HEAD
                 {moment(rentDetail?.currentRentDate.from).format("MMM Do ")}
               </p>
               <p className="font-robotoNormal">
@@ -117,6 +128,17 @@ const SingleRentDetail = () => {
 </p>
 
               
+=======
+                {moment(rentDetail?.currentRentDate.from).format("MMM Do")} -{" "}
+                {dateFormatter(rentDetail?.currentRentDate.to)}
+              </p>
+              <p className="font-robotoNormal">
+                <span className="font-medium">Next Rent Due:</span>{" "}
+                {dateFormatter(
+                  calculateNextDueDate(rentDetail?.currentRentDate.to)
+                )}
+              </p>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <p className="font-robotoNormal">
                 <span className="font-medium">Rent Status:</span>{" "}
                 {isRentPaid === true ? (
@@ -183,7 +205,11 @@ const SingleRentDetail = () => {
             <CardActionArea sx={{ borderRadius: "0.375rem" }}>
               <div className="p-4 shadow-lg rounded-md">
                 <div className="flex gap-2 items-center">
+<<<<<<< HEAD
                   <h4 className="font-medium">User Info</h4>
+=======
+                  <h4 className="font-medium">Tenant Info</h4>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   <ContactsRoundedIcon color="secondary" />
                 </div>
                 <div className="flex mt-4 gap-2 items-center">

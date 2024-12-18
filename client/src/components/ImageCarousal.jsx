@@ -33,7 +33,11 @@ const ImageCarousal = ({ realEstateImages }) => {
           >
             <img
               src={image}
+<<<<<<< HEAD
               alt="Facility"
+=======
+              alt="Real Estate Property"
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               className="h-72 md:h-96 object-cover"
             />
           </div>

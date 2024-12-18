@@ -51,7 +51,11 @@ const RentDetailComponent = ({
 
             <div>
               <p className="font-semibold">
+<<<<<<< HEAD
                 PHP <span className="">{format(realEstate?.price)}</span> /
+=======
+                NPR. <span className="">{format(realEstate?.price)}</span> /
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 month
               </p>
               <p className="">

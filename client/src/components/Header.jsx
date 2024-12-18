@@ -78,6 +78,7 @@ const Header = () => {
         </section>
       )}
       <header className="flex m-1 shadow-sm justify-center items-center">
+<<<<<<< HEAD
         <div className="flex items-center ml-2 mr-auto">
           <Logo />
           <div className="text-gray-700 ml-4">
@@ -87,6 +88,10 @@ const Header = () => {
               <h5 className="font-bold text-lg">General Service Unit Facility Booking</h5>
             )}
           </div>
+=======
+        <div className="flex flex-col justify-center ml-2 mr-auto">
+          <Logo />
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </div>
 
         <nav className="hidden justify-evenly items-center w-1/3 lg:flex">

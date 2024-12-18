@@ -73,9 +73,15 @@ const RealEstateDetail = () => {
     const emailTemplate = {
       to: realEstate?.propertyOwner?.email,
       from: user?.email,
+<<<<<<< HEAD
       subject: `Booking of Facility with ID: ${realEstate?.propertyId}`,
       body: `<p>Hi ${realEstate?.propertyOwner?.firstName} ${realEstate?.propertyOwner?.lastName},</p>
       <p>I am interested in booking Facility titled <strong>${realEstate?.title}</strong> with ID: ${realEstate?.propertyId}.</p>
+=======
+      subject: `Rental of Facility with ID: ${realEstate?.propertyId}`,
+      body: `<p>Hi ${realEstate?.propertyOwner?.firstName} ${realEstate?.propertyOwner?.lastName},</p>
+      <p>I am interested in renting your property titled <strong>${realEstate?.title}</strong> with ID: ${realEstate?.propertyId}.</p>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
       <p>Kindly contact me at ${user?.email} or +977 ${user?.phoneNumber}.</p>
       <p>Visit my profile <a href="${import.meta.env.VITE_APP_BASE_URL}/#/owner/tenant-user/${user?.slug}"><strong>${user?.firstName} ${user?.lastName}</strong></a>.</p>
       <br><br>
@@ -196,7 +202,11 @@ const RealEstateDetail = () => {
               <div className="flex mt-2 gap-2 items-center">
                 <span className="font-semibold"> Subject: </span>
                 <p>
+<<<<<<< HEAD
                   Booking of Facility with ID:{" "}
+=======
+                  Rental of Facility with ID:{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   <span className="text-sm">{realEstate?.propertyId}</span>
                 </p>
               </div>
@@ -209,16 +219,28 @@ const RealEstateDetail = () => {
                   </p>
                   <br />
                   <p>
+<<<<<<< HEAD
                   I would like to book the facility titled{" "}
+=======
+                    I am interested in booking Facility titled{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                     <strong>{realEstate?.title}</strong> with ID:{" "}
                     {realEstate?.propertyId}.
                   </p>
                   <p>
+<<<<<<< HEAD
                   and kindly contact me {user?.email}  {" "} or {user?.phoneNumber}. I would like inquire about the available dates for reservation.
                   
                   </p>
                   <p>
                    Please Visit my profile at{" "}
+=======
+                    Kindly contact me at {user?.email} or +977{" "}
+                    {user?.phoneNumber}.
+                  </p>
+                  <p>
+                    Visit my profile at{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                     <strong>
                       {user?.firstName} {user?.lastName}
                     </strong>

@@ -29,7 +29,11 @@ const RealEstateDetailCard = ({
             <h3 className="font-semibold">{title}</h3>
             <p className="-ml-1 text-base tracking-tight">
               <LocationOnOutlinedIcon sx={{ color: "#019149" }} />
+<<<<<<< HEAD
               {address?.location}, {address?.streetName}
+=======
+              {address?.location}, {address?.streetName} ,Kathmandu
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <div className="">
               <p className="font-robotoNormal text-xs font-semibold tracking-tight">
@@ -43,10 +47,17 @@ const RealEstateDetailCard = ({
           <div className="">
             <div className="rounded-md p-2">
               <p className="font-roboto text-primaryDark leading-4 ">
+<<<<<<< HEAD
                  per USE
               </p>
               <span className="font-semibold text-lg text-primaryDark">
                 PHP {format(price)}
+=======
+                RENT per month
+              </p>
+              <span className="font-semibold text-lg text-primaryDark">
+                NPR. {format(price)}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </span>
               <div>
                 <p className="font-roboto text-gray-500">{category}</p>

@@ -107,7 +107,11 @@ const RentDetailTenantPage = () => {
             <div className="mt-4 text-primaryDark">
               <p className="font-roboto leading-4 ">Rent per Use</p>
               <span className="font-semibold text-lg">
+<<<<<<< HEAD
                 PHP {format(rentDetail?.realEstate?.price)}
+=======
+                NPR. {format(rentDetail?.realEstate?.price)}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </span>
             </div>
             <div className="mt-4">

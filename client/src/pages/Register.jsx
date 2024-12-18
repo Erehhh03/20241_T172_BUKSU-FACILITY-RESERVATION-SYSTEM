@@ -18,7 +18,10 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import registerImg from "../assets/images/registerImg.svg";
 import { Button, CircularProgress } from "@mui/material";
 import moment from "moment";
+<<<<<<< HEAD
 import { GoogleLogin } from "@react-oauth/google"; // Import Google OAuth
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 
 const Register = () => {
   const { success, userType, errorFlag, errorMsg, isLoading, alertType } =
@@ -83,6 +86,7 @@ const Register = () => {
     }
   };
 
+<<<<<<< HEAD
   // Google Sign-In success handler
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
@@ -115,6 +119,8 @@ const Register = () => {
     console.log("Google Sign-In Failed");
   };
 
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   const handleClose = useCallback(
     (event, reason) => {
       if (reason === "clickaway") {
@@ -130,7 +136,12 @@ const Register = () => {
       <header className="flex m-1 shadow-sm">
         <Logo />
         <div className="flex flex-col justify-center ml-2">
+<<<<<<< HEAD
           <h5 className="font-bold text-lg">General Service Unit Facility Booking</h5>
+=======
+          <h5 className="font-display">Facility Booking</h5>
+         
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </div>
       </header>
 
@@ -263,6 +274,7 @@ const Register = () => {
                   </Link>
                 </p>
               </div>
+<<<<<<< HEAD
 
               {/* Google Sign-In Button */}
               <div className="mt-4 text-center">
@@ -271,6 +283,8 @@ const Register = () => {
                   onError={handleGoogleError}
                 />
               </div>
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </form>
           </div>
           <div className="hidden md:w-6/12 mb-12 md:mb-0 md:block mt-8">

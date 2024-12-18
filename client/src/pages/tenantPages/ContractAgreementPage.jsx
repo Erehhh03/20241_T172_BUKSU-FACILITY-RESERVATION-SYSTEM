@@ -56,6 +56,7 @@ const ContractAgreementPage = () => {
   // calculate the total rent amount according to payment plan
   const calculateTotalRent = useCallback(() => {
     const { paymentPlan, rentAmount } = contractDetail;
+<<<<<<< HEAD
     if (paymentPlan === "Cash") return rentAmount;
     if (paymentPlan === "Gcash") return rentAmount;
     if (paymentPlan === "PayMaya") return rentAmount;
@@ -64,6 +65,14 @@ const ContractAgreementPage = () => {
   }, [contractDetail]);
   
   
+=======
+    if (paymentPlan === "Monthly") return rentAmount;
+    if (paymentPlan === "Every 2 Months") return rentAmount * 2;
+    if (paymentPlan === "Every 3 Months") return rentAmount * 3;
+    if (paymentPlan === "Every 6 Months") return rentAmount * 6;
+    if (paymentPlan === "Every 12 Months") return rentAmount * 12;
+  }, [contractDetail]);
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 
   if (isLoading) return <PageLoading />;
 
@@ -83,7 +92,11 @@ const ContractAgreementPage = () => {
           </h3>
           <div className="flex flex-col w-11/12 mx-auto items-center gap-4 sm:flex-row sm:justify-center sm:items-start">
             <div className="flex flex-col gap-2 w-3/5  p-4 items-center text-center">
+<<<<<<< HEAD
               <h4 className="font-bold">FACILITY</h4>
+=======
+              <h4 className="font-bold">Real Estate</h4>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <Link
                 to={`/tenant/real-estate/${contractDetail?.realEstate?.slug}`}
               >
@@ -100,7 +113,11 @@ const ContractAgreementPage = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-3/5  p-4 items-center text-center">
+<<<<<<< HEAD
               <h4 className="font-bold">FACILITY OWNER</h4>
+=======
+              <h4 className="font-bold">Property Owner</h4>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <Link to={`/tenant/owner-user/${contractDetail?.owner?.slug}`}>
                 <h5 className="font-robotoNormal hover:text-primaryDark duration-300 ease-in-out cursor-pointer">
                   {contractDetail?.owner?.firstName}{" "}
@@ -135,27 +152,48 @@ const ContractAgreementPage = () => {
             </div>
             <div>
               <h5 className="font-robotoNormal">
+<<<<<<< HEAD
                 <span className="font-medium">Rent Amount</span>: PHP{" "}
                 {format(contractDetail?.rentAmount)} per USE
+=======
+                <span className="font-medium">Rent Amount</span>: NRS.{" "}
+                {format(contractDetail?.rentAmount)} per month
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </h5>
             </div>
           </div>
           <div className="w-11/12 mx-auto text-justify mt-6">
+<<<<<<< HEAD
             <h4>Booking Agreement Contract</h4>
             <p>
               This Booking Agreement Contract is applicable from{" "}
               <strong>{dateFormatter(contractDetail?.startDate)}</strong>,
               created by the facility{" "}
+=======
+            <h4>Rental Agreement Contract</h4>
+            <p>
+              This Rental Agreement Contract is applicable from{" "}
+              <strong>{dateFormatter(contractDetail?.startDate)}</strong>,
+              created by the property owner{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <strong>
                 {contractDetail?.owner?.firstName}{" "}
                 {contractDetail?.owner?.lastName}
               </strong>
+<<<<<<< HEAD
               , for the rental of the facility located at{" "}
+=======
+              , for the rental of the property located at{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <strong>
                 {contractDetail?.realEstate?.address?.location},{" "}
                 {contractDetail?.realEstate?.address?.streetName}
               </strong>{" "}
+<<<<<<< HEAD
               with {" "}
+=======
+              with the tenant{" "}
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <strong>
                 {contractDetail?.tenant?.firstName}{" "}
                 {contractDetail?.tenant?.lastName}
@@ -163,6 +201,7 @@ const ContractAgreementPage = () => {
               .
             </p>
             <br />
+<<<<<<< HEAD
             <h5>1. Booking Fee and Payment Terms</h5>
             <p>
             The Facility User shall pay a booking fee of{" "}
@@ -172,17 +211,39 @@ const ContractAgreementPage = () => {
               and payable through <strong>{contractDetail?.paymentPlan}</strong> on the
                day of payment and shall be considered late if
               not received by the Facility or after usage. 
+=======
+            <h5>1. Payment of Rent</h5>
+            <p>
+              Tenant shall pay rent in the amount of{" "}
+              <strong>NPR {format(contractDetail?.rentAmount)}</strong> per
+              month. Total Rent amount of{" "}
+              <strong>NPR {format(calculateTotalRent())}</strong> shall be due
+              and payable <strong>{contractDetail?.paymentPlan}</strong> on the
+              first day of the calendar month and shall be considered late if
+              not received by the Landlord on or before the 7th day of the
+              month.
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <br />
             <h5>2. Late Fees</h5>
             <p>
+<<<<<<< HEAD
               If payment is not received after or during use of the facility, a late fee of
+=======
+              If rent is not received by the 7th day of the month, a late fee of
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               5% shall be added to the total amount due.
             </p>
             <br />
             <h5>3. Termination of Agreement</h5>
             <p>
+<<<<<<< HEAD
             This Agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, communications, or agreements, whether written or oral.
+=======
+              The Landlord may terminate this Agreement if rent is more than 30
+              days late. In such event, Tenant shall vacate the Property
+              immediately.
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <br />
             <h5>4. Entire Agreement</h5>
@@ -194,19 +255,36 @@ const ContractAgreementPage = () => {
             <br />
             <h5>5. Amendments</h5>
             <p>
+<<<<<<< HEAD
             This Agreement can only be amended through a written document signed by both parties.
+=======
+              This Agreement may only be amended by written instrument executed
+              by both parties.
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <br />
             <h5>6. Governing Law</h5>
             <p>
+<<<<<<< HEAD
             This Agreement shall be governed and interpreted in accordance with the laws of the jurisdiction where the facility is located.
+=======
+              This Agreement shall be governed by and construed in accordance
+              with the laws of the state in which the Property is located.
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <br />
             <h5>7. Assignment and Binding Effect</h5>
             <p>
+<<<<<<< HEAD
             The Facility User shall not assign this Agreement or sublease the facility without prior written consent from the Facility Owner. This Agreement shall be binding upon and inure to the benefit of both parties, their heirs, legal representatives, successors, and assigns.
 
 
+=======
+              Tenant shall not assign this Agreement or sublease the Property
+              without the prior written consent of the Landlord. This Agreement
+              shall be binding upon and inure to the benefit of both parties,
+              their heirs, legal representatives, successors, and assigns.
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </p>
             <br />
           </div>

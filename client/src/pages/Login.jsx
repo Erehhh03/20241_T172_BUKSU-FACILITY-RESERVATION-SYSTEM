@@ -1,5 +1,8 @@
 import { useEffect, useState, useCallback } from "react";
+<<<<<<< HEAD
 import ReCAPTCHA from "react-google-recaptcha"; // Add reCAPTCHA import
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 import {
   Logo,
   FormPasswordField,
@@ -14,7 +17,11 @@ import {
   stateClear,
 } from "../features/auth/authSlice";
 import { useNavigate, useParams, Link } from "react-router-dom";
+<<<<<<< HEAD
 import loginImg from "../assets/images/loginpic.png";
+=======
+import loginImg from "../assets/images/loginImg.svg";
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 import { Button } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -29,18 +36,24 @@ const Login = () => {
     alertType,
     isLoading,
   } = useSelector((store) => store.auth);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   const navigate = useNavigate();
   const param = useParams();
   const dispatch = useDispatch();
 
   const [values, setFormValues] = useState({ email: "", password: "" });
+<<<<<<< HEAD
   const [captchaToken, setCaptchaToken] = useState(null);
 
   // Handle reCAPTCHA verification
   const handleCaptchaChange = (token) => {
     setCaptchaToken(token);
   };
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 
   useEffect(() => {
     if (user) {
@@ -59,19 +72,26 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     if (!captchaToken) {
       alert("Please complete the reCAPTCHA.");
       return;
     }
 
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     const { email, password } = values;
     const userInfo = {
       email,
       password,
       role: param.role,
+<<<<<<< HEAD
       captchaToken, // Send token to backend for verification
     };
 
+=======
+    };
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     if (param.role === "owner") {
       dispatch(loginOwner({ userInfo }));
     } else if (param.role === "tenant") {
@@ -101,7 +121,12 @@ const Login = () => {
       <header className="flex m-1 shadow-sm">
         <Logo />
         <div className="flex flex-col justify-center ml-2">
+<<<<<<< HEAD
           <h5 className="font-bold text-lg">General Service Unit Facility Booking</h5>
+=======
+          <h5 className="font-display">Facility Booking </h5>
+          <p className="hidden text-xs md:block md:text-sm"></p>
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </div>
       </header>
 
@@ -139,6 +164,7 @@ const Login = () => {
                 </div>
               </div>
 
+<<<<<<< HEAD
               {/* Add reCAPTCHA */}
               <div className="flex justify-center my-4">
                 <ReCAPTCHA
@@ -147,6 +173,8 @@ const Login = () => {
                 />
               </div>
 
+=======
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               <div className="text-center">
                 <div className="mx-auto w-3/4 md:w-1/3">
                   <Button

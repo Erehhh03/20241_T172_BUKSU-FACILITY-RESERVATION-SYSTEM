@@ -83,12 +83,20 @@ const Homepage = () => {
         ) : (
           <>
             <h3 className="text-center mt-8 mb-6 font-heading font-bold">
+<<<<<<< HEAD
               Facilities
+=======
+              All Properties
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             </h3>
 
             {allRealEstate?.length === 0 ? (
               <h2 className="text-center mt-8 mb-6 font-heading font-bold">
+<<<<<<< HEAD
                 No Facility Available This Time
+=======
+                No Real Estate Found
+>>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </h2>
             ) : (
               <main className="flex flex-wrap gap-5 justify-center mb-12 md:justify-center mx-4 md:mx-0">
