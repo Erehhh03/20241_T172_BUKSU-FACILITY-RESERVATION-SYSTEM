@@ -80,11 +80,7 @@ const PaymentHistoryComponent = ({
                         {dateFormatter(payment.currentRentDate.to)}
                       </td>
                       <td className="text-xs md:text-sm font-light px-6 py-4 whitespace-nowrap">
-<<<<<<< HEAD
                         PHP {format(payment.amountPaid)}
-=======
-                        NPR. {format(payment.amountPaid)}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                       </td>
                       <td className="text-xs md:text-sm font-light px-6 py-4 whitespace-nowrap">
                         {payment.paymentMethod}

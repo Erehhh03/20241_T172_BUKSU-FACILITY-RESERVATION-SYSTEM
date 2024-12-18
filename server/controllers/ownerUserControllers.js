@@ -118,35 +118,8 @@ const getAllContacts = async (req, res) => {
   const { userId } = req.user;
   const { name } = req.query;
 
-<<<<<<< HEAD
   let tenantUsers = await TenantUser.find({})
   res.json({ contacts: tenantUsers });
-=======
-  // Get the current owner user's contact list
-  const currentOwnerUser = await OwnerUser.findById(userId).populate({
-    path: "contacts",
-    select:
-      "-savedProperties -contacts -accountVerificationToken -createdAt -updatedAt -__v",
-  });
-
-  if (!currentOwnerUser) throw new NotFoundError("User not found");
-
-  let contacts = currentOwnerUser.contacts; // Get the current owner user's contact list
-  // Filter the contact list by name if a name is provided in the query
-  if (name) {
-    contacts = contacts.filter((contact) => {
-      return (
-        contact.firstName.toLowerCase().includes(name.toLowerCase()) ||
-        contact.lastName.toLowerCase().includes(name.toLowerCase())
-      );
-    });
-  }
-
-  // reverse the contact list so that the most recent contact is at the top
-  contacts = contacts.reverse();
-
-  res.json({ contacts });
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 };
 
 export {

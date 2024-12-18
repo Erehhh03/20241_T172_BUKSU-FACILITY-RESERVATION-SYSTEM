@@ -57,11 +57,7 @@ const RealEstateCard = ({
               </h4>
               <p className="text-sm text-gray-400">{category}</p>
               <p className="font-semibold">
-<<<<<<< HEAD
                 PHP <span className="">{format(price)}</span> / PER USE
-=======
-                NPR. <span className="">{format(price)}</span> / month
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </p>
               <p className="text-base">
                 <LocationOnOutlinedIcon color="secondary" /> {address?.location}

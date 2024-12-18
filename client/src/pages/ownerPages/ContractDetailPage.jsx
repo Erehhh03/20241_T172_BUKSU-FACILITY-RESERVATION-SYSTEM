@@ -67,7 +67,6 @@ const ContractDetailPage = () => {
   // calculate the total rent amount according to payment plan
   const calculateTotalRent = useCallback(() => {
     const { paymentPlan, rentAmount } = contractDetail;
-<<<<<<< HEAD
     if (paymentPlan === "Cash") return rentAmount;
     if (paymentPlan === "Gcash") return rentAmount;
     if (paymentPlan === "PayMaya") return rentAmount;
@@ -76,15 +75,6 @@ const ContractDetailPage = () => {
   }, [contractDetail]);
 
 
-=======
-    if (paymentPlan === "Monthly") return rentAmount;
-    if (paymentPlan === "Every 2 Months") return rentAmount * 2;
-    if (paymentPlan === "Every 3 Months") return rentAmount * 3;
-    if (paymentPlan === "Every 6 Months") return rentAmount * 6;
-    if (paymentPlan === "Every 12 Months") return rentAmount * 12;
-  }, [contractDetail]);
-
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   if (isLoading) return <PageLoading />;
 
   if (!contractDetail)
@@ -101,11 +91,7 @@ const ContractDetailPage = () => {
       </h3>
       <div className="flex flex-col w-11/12 mx-auto items-center gap-4 sm:flex-row sm:justify-center sm:items-start">
         <div className="flex flex-col gap-2 w-3/5  p-4 items-center text-center">
-<<<<<<< HEAD
           <h4 className="font-bold">FACILITY</h4>
-=======
-          <h4 className="font-bold">Real Estate</h4>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           <Link to={`/owner/real-estate/${contractDetail?.realEstate?.slug}`}>
             <h5 className="font-robotoNormal hover:text-primaryDark duration-300 ease-in-out cursor-pointer">
               {contractDetail?.realEstate?.title}
@@ -120,11 +106,7 @@ const ContractDetailPage = () => {
         </div>
 
         <div className="flex flex-col gap-2 w-3/5  p-4 items-center text-center">
-<<<<<<< HEAD
           <h4 className="font-bold">CONTACT DETAILS</h4>
-=======
-          <h4 className="font-bold">Tenant User</h4>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           <Link to={`/owner/tenant-user/${contractDetail?.tenant?.slug}`}>
             <h5 className="font-robotoNormal hover:text-primaryDark duration-300 ease-in-out cursor-pointer">
               {contractDetail?.tenant?.firstName}{" "}
@@ -159,19 +141,13 @@ const ContractDetailPage = () => {
         </div>
         <div>
           <h5 className="font-robotoNormal">
-<<<<<<< HEAD
             <span className="font-medium">Rent Amount</span>: PHP{" "}
             {format(contractDetail?.rentAmount)} per USE
-=======
-            <span className="font-medium">Rent Amount</span>: NRS.{" "}
-            {format(contractDetail?.rentAmount)} per month
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           </h5>
         </div>
       </div>
 
       <div className="w-11/12 mx-auto text-justify mt-6">
-<<<<<<< HEAD
         <h4>Booking Agreement Contract</h4>
         <p>
               This Booking Agreement Contract is applicable from{" "}
@@ -240,79 +216,6 @@ const ContractDetailPage = () => {
 
             </p>
             <br />
-=======
-        <h4>Rental Agreement Contract</h4>
-        <p>
-          This Rental Agreement Contract is applicable from{" "}
-          <strong>{dateFormatter(contractDetail?.startDate)}</strong>, created
-          by the property owner{" "}
-          <strong>
-            {contractDetail?.owner?.firstName} {contractDetail?.owner?.lastName}
-          </strong>
-          , for the rental of the property located at{" "}
-          <strong>
-            {contractDetail?.realEstate?.address?.location},{" "}
-            {contractDetail?.realEstate?.address?.streetName}
-          </strong>{" "}
-          with the tenant{" "}
-          <strong>
-            {contractDetail?.tenant?.firstName}{" "}
-            {contractDetail?.tenant?.lastName}
-          </strong>
-          .
-        </p>
-        <br />
-        <h5>1. Payment of Rent</h5>
-        <p>
-          Tenant shall pay rent in the amount of{" "}
-          <strong>NPR {format(contractDetail?.rentAmount)}</strong> per month.
-          Total Rent amount of{" "}
-          <strong>NPR {format(calculateTotalRent())}</strong> shall be due and
-          payable <strong>{contractDetail?.paymentPlan}</strong> on the first
-          day of the calendar month and shall be considered late if not received
-          by the Landlord on or before the 7th day of the month.
-        </p>
-        <br />
-        <h5>2. Late Fees</h5>
-        <p>
-          If rent is not received by the 7th day of the month, a late fee of 5%
-          shall be added to the total amount due.
-        </p>
-        <br />
-        <h5>3. Termination of Agreement</h5>
-        <p>
-          The Landlord may terminate this Agreement if rent is more than 30 days
-          late. In such event, Tenant shall vacate the Property immediately.
-        </p>
-        <br />
-        <h5>4. Entire Agreement</h5>
-        <p>
-          This Agreement constitutes the entire agreement between the parties
-          and supersedes all prior negotiations, understandings, and agreements
-          between the parties, whether written or oral.
-        </p>
-        <br />
-        <h5>5. Amendments</h5>
-        <p>
-          This Agreement may only be amended by written instrument executed by
-          both parties.
-        </p>
-        <br />
-        <h5>6. Governing Law</h5>
-        <p>
-          This Agreement shall be governed by and construed in accordance with
-          the laws of the state in which the Property is located.
-        </p>
-        <br />
-        <h5>7. Assignment and Binding Effect</h5>
-        <p>
-          Tenant shall not assign this Agreement or sublease the Property
-          without the prior written consent of the Landlord. This Agreement
-          shall be binding upon and inure to the benefit of both parties, their
-          heirs, legal representatives, successors, and assigns.
-        </p>
-        <br />
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
       </div>
 
       {contractDetail?.status === "Active" && (

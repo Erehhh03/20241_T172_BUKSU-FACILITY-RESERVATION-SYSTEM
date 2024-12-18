@@ -2,10 +2,7 @@ import express from "express";
 const router = express.Router();
 import {
   createContract,
-<<<<<<< HEAD
   createTenantContract,
-=======
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   getContractDetailTenantView,
   approveContract,
   getContractDetailOwnerView,
@@ -23,10 +20,7 @@ import {
  * @route POST /api/contract
  */
 router.post("/", authorizeOwnerUser, createContract);
-<<<<<<< HEAD
 router.post("/tenant", authorizeOwnerUser, createTenantContract);
-=======
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 
 /**
  * @description Get the contract details for the tenant user

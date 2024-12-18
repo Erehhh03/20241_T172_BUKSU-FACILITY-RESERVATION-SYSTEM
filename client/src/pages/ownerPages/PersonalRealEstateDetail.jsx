@@ -83,11 +83,7 @@ const PersonalRealEstateDetail = () => {
     <>
       <main className="mb-12 mt-10 mx-4 md:mx-12">
         <div className="flex flex-col gap-4 mx-auto">
-<<<<<<< HEAD
           <h3 className="font-heading font-bold">Facility Details</h3>
-=======
-          <h3 className="font-heading font-bold">Rental Property Detail</h3>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           <section className="flex flex-col gap-12 rounded-md md:flex-row">
             <div className="w-full md:w-2/3">
               <ImageCarousal realEstateImages={realEstate?.realEstateImages} />
@@ -103,11 +99,7 @@ const PersonalRealEstateDetail = () => {
                 <p className="-ml-1 text-base tracking-tight">
                   <LocationOnOutlinedIcon sx={{ color: "#019149" }} />
                   {realEstate?.address?.location},{" "}
-<<<<<<< HEAD
                   {realEstate?.address?.streetName} ,Malaybalay Bukidnon 8700
-=======
-                  {realEstate?.address?.streetName} ,Kathmandu
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 </p>
                 <div className="">
                   <p className="font-robotoNormal text-xs font-semibold tracking-tight">
@@ -121,17 +113,10 @@ const PersonalRealEstateDetail = () => {
               <div className="">
                 <div className="rounded-md">
                   <p className="font-roboto text-primaryDark leading-4 ">
-<<<<<<< HEAD
                     RENT per USE
                   </p>
                   <span className="font-semibold text-lg text-primaryDark">
                     PHP {format(realEstate?.price)}
-=======
-                    RENT per month
-                  </p>
-                  <span className="font-semibold text-lg text-primaryDark">
-                    NPR. {format(realEstate?.price)}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   </span>
                 </div>
               </div>

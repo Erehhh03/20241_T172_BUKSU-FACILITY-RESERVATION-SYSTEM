@@ -38,11 +38,7 @@ const RentalPropertyDetail = () => {
     <>
       <main className="mb-12 mt-10 mx-4 md:mx-12">
         <div className="flex flex-col gap-4 mx-auto">
-<<<<<<< HEAD
           <h3 className="font-heading font-bold">Booking Detail</h3>
-=======
-          <h3 className="font-heading font-bold">Rental Property Detail</h3>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           <section className="flex flex-col gap-12 rounded-md md:flex-row">
             <div className="w-full md:w-2/3">
               <ImageCarousal realEstateImages={realEstate?.realEstateImages} />
@@ -75,11 +71,7 @@ const RentalPropertyDetail = () => {
                     RENT per Use
                   </p>
                   <span className="font-semibold text-lg text-primaryDark">
-<<<<<<< HEAD
                     PHP {format(realEstate?.price)}
-=======
-                    NPR. {format(realEstate?.price)}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   </span>
                 </div>
               </div>
@@ -106,11 +98,7 @@ const RentalPropertyDetail = () => {
                     sx={{ color: "#fff" }}
                     startIcon={<MapsHomeWorkIcon />}
                   >
-<<<<<<< HEAD
                     Booking Detail
-=======
-                    Rent Detail
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   </Button>
                 </Link>
                 <Link to={`/tenant/send-complaint/${slug}`}>

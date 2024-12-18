@@ -53,7 +53,6 @@ const createContract = async (req, res) => {
   const subject = `Contract created for rental of property titled ${realEstateUser.title}`;
   const body = `
     <p> Dear ${tenantUser.firstName} ${tenantUser.lastName},</p>    
-<<<<<<< HEAD
     <p>I hope this email finds you well. I am writing to inform about that the contract for booking of property titled <strong>${realEstateUser.title}</strong> located at ${realEstateUser.address.location}, ${realEstateUser.address.streetName} has been created successfully.</p>
     <p>Please follow the link to view and approve this contract. Please carefully review the Booking contract and let us know if you have any questions or concerns.</p>
         <a href="${process.env.CLIENT_URL}/#/tenant/contract-agreement/${contract._id}"><strong>View Contract</strong></a><br>
@@ -116,12 +115,6 @@ const createTenantContract = async (req, res) => {
     <p>Please follow the link to view and approve this contract. Please carefully review the Booking contract and let us know if you have any questions or concerns.</p>
     <a href="${process.env.CLIENT_URL}/#/tenant/contract-agreement/${contract._id}"><strong>View Contract</strong></a><br>
     <p>Please note that the Booking contract is legally binding, and both parties are required to adhere to its terms and conditions.</p>
-=======
-    <p>I hope this email finds you well. I am writing to inform about that the contract for rental of property titled <strong>${realEstateUser.title}</strong> located at ${realEstateUser.address.location}, ${realEstateUser.address.streetName} has been created successfully.</p>
-    <p>Please follow the link to view and approve this contract. Please carefully review the rental contract and let us know if you have any questions or concerns.</p>
-    <a href="${process.env.CLIENT_URL}/#/tenant/contract-agreement/${contract._id}"><strong>View Contract</strong></a><br>
-    <p>Please note that the rental contract is legally binding, and both parties are required to adhere to its terms and conditions.</p>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     <p>If you have any questions or concerns about the rental contract or the rental process, please do not hesitate to contact me.</p>
    <br><br>
     <p>Best regards,</p>
@@ -302,19 +295,11 @@ const deleteContract = async (req, res) => {
   const subject = `Contract terminated of property titled ${realEstate.title}`;
   const body = `
     <p> Dear ${tenantUser.firstName} ${tenantUser.lastName},</p>    
-<<<<<<< HEAD
     <p>I hope this email finds you well. I am writing to inform you about the termination of the booking contract of facility titled <strong>${realEstate.title}</strong> 
     located at ${realEstate.address.location}, ${realEstate.address.streetName}</p>
     <p>The contract was terminated successfully along with the booking details and payment histories associated with it.</p>
     <p>Please note that you are required to vacate the property within the day. 
     We will conduct a final inspection of the property to ensure that it is in the same condition as when you use it, 
-=======
-    <p>I hope this email finds you well. I am writing to inform you about the termination of the rental contract of property titled <strong>${realEstate.title}</strong> 
-    located at ${realEstate.address.location}, ${realEstate.address.streetName}</p>
-    <p>The contract was terminated successfully along with the rent details and payment histories associated with it.</p>
-    <p>Please note that you are required to vacate the property within 7 days. 
-    We will conduct a final inspection of the property to ensure that it is in the same condition as when you moved in, 
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     with reasonable wear and tear accepted. 
     Any damages or outstanding rent payments will be deducted from your security deposit.</p>
    <p>Thank you for your cooperation during your stay at our property.</p>
@@ -405,10 +390,7 @@ const getTenantContractDetail = async (req, res) => {
 
 export {
   createContract,
-<<<<<<< HEAD
   createTenantContract,
-=======
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   getContractDetailTenantView,
   approveContract,
   getContractDetailOwnerView,

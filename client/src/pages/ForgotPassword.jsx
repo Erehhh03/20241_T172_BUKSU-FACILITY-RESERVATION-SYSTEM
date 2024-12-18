@@ -72,15 +72,9 @@ const ForgotPassword = () => {
       <header className="flex m-1 shadow-sm">
         <Logo />
         <div className="flex flex-col justify-center ml-2">
-<<<<<<< HEAD
           <h5 className="font-display">General Service Unit Facility Booking</h5>
           <p className="hidden text-xs md:block md:text-sm">
            
-=======
-          <h5 className="font-display">Rent Manager</h5>
-          <p className="hidden text-xs md:block md:text-sm">
-            Find and Manage your rentals in one place
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           </p>
         </div>
       </header>

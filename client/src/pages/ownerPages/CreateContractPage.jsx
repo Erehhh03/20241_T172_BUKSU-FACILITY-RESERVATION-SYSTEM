@@ -42,19 +42,11 @@ const CreateContractPage = () => {
   );
 
   const paymentPlans = [
-<<<<<<< HEAD
     "Cash",
     "Gcash",
     "PayMaya",
     "Over the Counter",
     "Others",
-=======
-    "Monthly",
-    "Every 2 Months",
-    "Every 3 Months",
-    "Every 6 Months",
-    "Every 12 Months",
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   ];
 
   // Redirect to detail page of the property after successful contract creation
@@ -112,11 +104,7 @@ const CreateContractPage = () => {
           </p>
         </div>
         <div className="mb-4 flex items-center">
-<<<<<<< HEAD
           <h5 className="font-semibold">Facility Title: </h5>
-=======
-          <h5 className="font-semibold">Real Estate Title: </h5>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           <h5 className="ml-2">{title}</h5>
         </div>
         <div className="">
@@ -125,11 +113,7 @@ const CreateContractPage = () => {
               <TextField
                 select
                 required
-<<<<<<< HEAD
                 label="User"
-=======
-                label="Tenant User"
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 value={contractForm.tenant}
                 onChange={handleChange}
                 sx={{ width: "300px" }}
@@ -143,15 +127,9 @@ const CreateContractPage = () => {
                 ))}
               </TextField>
               <DatePicker
-<<<<<<< HEAD
                 label="Available Date"
                 value={date}
                 views={["year", "month","day"]}
-=======
-                label="Contract Start Date"
-                value={date}
-                views={["year", "month"]}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 handleChange={useCallback(
                   (date) => {
                     setDate(date);
@@ -163,11 +141,7 @@ const CreateContractPage = () => {
               <TextField
                 select
                 required
-<<<<<<< HEAD
                 label="Payment Method"
-=======
-                label="Payment Plan"
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 value={contractForm.paymentPlan}
                 onChange={handleChange}
                 sx={{ width: "300px" }}

@@ -33,11 +33,7 @@ const NavBarLinksOwner = ({ toggleMenu }) => {
             width: "100%",
           }}
         >
-<<<<<<< HEAD
           Post Facility
-=======
-          Post Property
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Button>
       </Link>
       <Link
@@ -69,11 +65,7 @@ const NavBarLinksOwner = ({ toggleMenu }) => {
             width: "100%",
           }}
         >
-<<<<<<< HEAD
           BOOKING
-=======
-          Rent
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Button>
       </Link>
       <Link to="/owner/chat" onClick={toggleMenu} className="text-center">
@@ -126,11 +118,7 @@ const NavBarLinksTenant = ({ toggleMenu }) => {
             width: "100%",
           }}
         >
-<<<<<<< HEAD
           BOOKINGS
-=======
-          Rental Properties
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Button>
       </Link>
       <Link

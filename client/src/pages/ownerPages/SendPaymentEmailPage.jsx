@@ -86,20 +86,12 @@ const SendPaymentEmailPage = () => {
         rentDetail?.currentRentDate.to
       )} is due. As per our rental agreement, rent is to be paid within 7 days after ${dateFormatter(
         rentDetail?.currentRentDate.from
-<<<<<<< HEAD
       )}. The total amount is PHP ${format(
-=======
-      )}. The total rent amount is NPR ${format(
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         calculateTotalRent(
           rentDetail?.paymentPlan,
           rentDetail?.realEstate.price
         )
-<<<<<<< HEAD
       )} for PHP ${format(rentDetail?.realEstate?.price)} per USE.
-=======
-      )} for NPR ${format(rentDetail?.realEstate?.price)} per month.
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </p>
               <p>
                 Please note that late payment fees may apply if the rent is not
@@ -114,11 +106,7 @@ const SendPaymentEmailPage = () => {
                 Number of Months: <b>${calculateNumberOfMonths(
                   rentDetail?.paymentPlan
                 )}</b> <br />
-<<<<<<< HEAD
                 Rent Amount: <b>PHP ${format(
-=======
-                Rent Amount: <b>NPR ${format(
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   calculateTotalRent(
                     rentDetail?.paymentPlan,
                     rentDetail?.realEstate.price
@@ -195,11 +183,7 @@ const SendPaymentEmailPage = () => {
                     rentDetail?.realEstate.price
                   )
                 )}{" "}
-<<<<<<< HEAD
                 for PHP {format(rentDetail?.realEstate?.price)} per USE.
-=======
-                for NPR {format(rentDetail?.realEstate?.price)} per month.
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
               </p>
               <br />
               <p>
@@ -217,11 +201,7 @@ const SendPaymentEmailPage = () => {
                 <b>{calculateNumberOfMonths(rentDetail?.paymentPlan)}</b> <br />
                 Rent Amount:{" "}
                 <b>
-<<<<<<< HEAD
                   PHP{" "}
-=======
-                  NPR{" "}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                   {format(
                     calculateTotalRent(
                       rentDetail?.paymentPlan,

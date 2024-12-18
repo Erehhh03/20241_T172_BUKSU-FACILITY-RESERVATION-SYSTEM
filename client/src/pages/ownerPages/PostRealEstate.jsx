@@ -159,14 +159,9 @@ const PostRealEstate = () => {
                     label="Category"
                     name="category"
                     options={[
-<<<<<<< HEAD
                       "Hall",
                       "Quadrangle",
                       "Theater"
-=======
-                      "House",
-                      "Apartment",
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                       
                       
                     ]}

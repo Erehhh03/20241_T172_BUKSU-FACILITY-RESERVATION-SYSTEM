@@ -128,17 +128,10 @@ const register = async (req, res) => {
     const subject = "Email Verification Link";
     const body = `
     <p> Hello ${owner.firstName} ${owner.lastName},</p>
-<<<<<<< HEAD
     <p>Please click on the link below to verify your account </p>
     <a href="${process.env.CLIENT_URL}/#/verify-account/owner/${verificationToken}">Verify Account</a>
     <p>Regards,</p>
     <p>General Service Unit</p>
-=======
-    <p>Please click on the link below to verify your account on Property Plus</p>
-    <a href="${process.env.CLIENT_URL}/#/verify-account/owner/${verificationToken}">Verify Account</a>
-    <p>Regards,</p>
-    <p>Team Property Plus</p>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     `;
     await sendEmail(to, from, subject, body);
 
@@ -170,17 +163,10 @@ const register = async (req, res) => {
     const subject = "Email Verification Link";
     const body = `
     <p> Hello ${tenant.firstName} ${tenant.lastName},</p>
-<<<<<<< HEAD
     <p>Please click on the link below to verify your account</p>
     <a href="${process.env.CLIENT_URL}/#/verify-account/tenant/${verificationToken}">Verify Account</a>
     <p>Regards,</p>
     <p>General Service Unit</p>
-=======
-    <p>Please click on the link below to verify your account on Property Plus</p>
-    <a href="${process.env.CLIENT_URL}/#/verify-account/tenant/${verificationToken}">Verify Account</a>
-    <p>Regards,</p>
-    <p>Team Property Plus</p>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     `;
     await sendEmail(to, from, subject, body);
 
@@ -312,11 +298,7 @@ const resendVerificationEmail = async (req, res) => {
     <p>Please click on the link below to verify your account on Property Plus</p>
     <a href="${process.env.CLIENT_URL}/#/verify-account/owner/${verificationToken}">Verify Account</a>
     <p>Regards,</p>
-<<<<<<< HEAD
     <p>General Service Unit</p>
-=======
-    <p>Team Property Plus</p>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     `;
 
     // send email with token link
@@ -354,11 +336,7 @@ const resendVerificationEmail = async (req, res) => {
     <p>Please click on the link below to verify your account on Property Plus</p>
     <a href="${process.env.CLIENT_URL}/#/verify-account/tenant/${verificationToken}">Verify Account</a>
     <p>Regards,</p>
-<<<<<<< HEAD
     <p>General Service Unit</p>
-=======
-    <p>Team Property Plus</p>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     `;
     await sendEmail(to, from, subject, body);
 

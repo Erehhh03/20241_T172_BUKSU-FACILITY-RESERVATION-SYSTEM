@@ -17,28 +17,17 @@ const RentDetailSchema = new mongoose.Schema(
       ref: "RealEstate",
       required: true,
     },
-<<<<<<< HEAD
     
     
-=======
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
     paymentPlan: {
       type: String,
       enum: {
         values: [
-<<<<<<< HEAD
           "Cash",
           "Gcash",
           "PayMaya",
           "Over the Counter",
           "Others",
-=======
-          "Monthly",
-          "Every 2 Months",
-          "Every 3 Months",
-          "Every 6 Months",
-          "Every 12 Months",
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         ],
         message: "{VALUE} is not supported",
       },

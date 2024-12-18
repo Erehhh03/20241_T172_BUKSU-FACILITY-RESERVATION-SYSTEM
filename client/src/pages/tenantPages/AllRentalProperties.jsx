@@ -30,21 +30,13 @@ const AllRentalProperties = () => {
   if (allRentalProperties?.length === 0)
     return (
       <div className="mx-auto text-center mt-8">
-<<<<<<< HEAD
         <h4 className="mb-4">You do not have any active Facility Booking</h4>
-=======
-        <h4 className="mb-4">You do not have any active Rental Properties</h4>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         <Button
           onClick={() => navigate("/tenant")}
           variant="contained"
           sx={{ color: "#fff" }}
         >
-<<<<<<< HEAD
           Browse Facility
-=======
-          Browse Properties
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Button>
       </div>
     );
@@ -52,13 +44,8 @@ const AllRentalProperties = () => {
     <>
       <main className="flex flex-col mb-12 mt-8 md:items-start md:ml-10">
         <h3 className="my-4 font-heading font-bold text-center">
-<<<<<<< HEAD
           Your Booked{" "}
           {allRentalProperties?.length > 1 ? "Properties" : "Facilities"}
-=======
-          Your Rental{" "}
-          {allRentalProperties?.length > 1 ? "Properties" : "Property"}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </h3>
         <div className="flex flex-wrap gap-8 justify-center mx-4 md:justify-start md:mx-0">
           {allRentalProperties?.map((item) => {
@@ -102,11 +89,7 @@ const AllRentalProperties = () => {
                       </h4>
                       <p className="text-sm text-gray-400">{category}</p>
                       <p className="font-semibold">
-<<<<<<< HEAD
                         PHP <span className="">{format(price)}</span> / month
-=======
-                        NPR. <span className="">{format(price)}</span> / month
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                       </p>
                       <p className="text-base">
                         <LocationOnOutlinedIcon color="secondary" />{" "}

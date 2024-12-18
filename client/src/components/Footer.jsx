@@ -12,11 +12,7 @@ const Footer = () => {
           <Logo />
 
           <div className="flex flex-col ml-3 justify-center">
-<<<<<<< HEAD
             <h1 className="font-display text-xl md:text-2xl"> General Service Unit Facility Booking</h1>
-=======
-            <h1 className="font-display text-xl md:text-2xl">Facility Booking</h1>
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
             
           </div>
         </div>
@@ -37,11 +33,7 @@ const Footer = () => {
       <span className="block text-sm  sm:text-center ">
         2024 |{" "}
         <Link to={`/${userType}`} className="hover:underline">
-<<<<<<< HEAD
           General Service Unit Facility Booking 
-=======
-          Facility Booking
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
         </Link>
       </span>
     </footer>

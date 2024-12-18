@@ -24,11 +24,7 @@ const CreateRentDetail = () => {
 
   const { allContracts, isLoading } = useSelector((state) => state.ownerUser);
 
-<<<<<<< HEAD
   // Get all real estate contracts
-=======
-  // get all real estate
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   useEffect(() => {
     dispatch(getOwnerAllContracts());
   }, [dispatch]);
@@ -42,11 +38,7 @@ const CreateRentDetail = () => {
     tenantName: "",
   });
 
-<<<<<<< HEAD
   // Handle change in the form
-=======
-  // handle change in the form
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   const handleChange = useCallback(
     (e) => {
       setContractFrom({ ...contractForm, [e.target.name]: e.target.value });
@@ -54,7 +46,6 @@ const CreateRentDetail = () => {
     [contractForm]
   );
 
-<<<<<<< HEAD
   // Set rent amount to the price of the property when the property is selected
   useEffect(() => {
     if (contractForm.realEstate) {
@@ -74,38 +65,6 @@ const CreateRentDetail = () => {
       }
     }
   }, [contractForm.realEstate, allContracts]);
-=======
-  // set rent amount to the price of the property when the property is selected
-  useEffect(() => {
-    if (contractForm.realEstate) {
-      setContractFrom({
-        ...contractForm,
-        tenant: allContracts?.find(
-          (contract) => contract.realEstate._id === contractForm.realEstate
-        ).tenant._id,
-        rentAmount: allContracts?.find(
-          (contract) => contract.realEstate._id === contractForm.realEstate
-        ).rentAmount,
-        startDate: allContracts?.find(
-          (contract) => contract.realEstate._id === contractForm.realEstate
-        ).startDate,
-        paymentPlan: allContracts?.find(
-          (contract) => contract.realEstate._id === contractForm.realEstate
-        ).paymentPlan,
-        tenantName: allContracts
-          ?.find(
-            (contract) => contract.realEstate._id === contractForm.realEstate
-          )
-          .tenant.firstName.concat(
-            " ",
-            allContracts?.find(
-              (contract) => contract.realEstate._id === contractForm.realEstate
-            ).tenant.lastName
-          ),
-      });
-    }
-  }, [contractForm.realEstate, allContracts, setContractFrom, contractForm]);
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
 
   // Redirect to all rent details page
   useEffect(() => {
@@ -127,11 +86,7 @@ const CreateRentDetail = () => {
     [dispatch]
   );
 
-<<<<<<< HEAD
   // Modal handling
-=======
-  //modal
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
   const [open, setOpen] = useState(false);
   const handleModalOpen = useCallback(() => setOpen(true), []);
   const handleModalClose = useCallback(() => setOpen(false), []);
@@ -165,15 +120,9 @@ const CreateRentDetail = () => {
     <main className="flex flex-col md:flex-row">
       <div className="mt-10 flex flex-col items-center md:ml-16 md:items-start">
         <div className="mb-6">
-<<<<<<< HEAD
           <h3 className="font-heading font-bold">Create Facility Detail</h3>
           <p className="text-gray-400 -mt-2 font-robotoNormal">
             Fill in the form below to create the Facility detail
-=======
-          <h3 className="font-heading font-bold">Create Rent Detail</h3>
-          <p className="text-gray-400 -mt-2 font-robotoNormal">
-            Fill in the form below to create the rent detail
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
           </p>
         </div>
 
@@ -182,11 +131,7 @@ const CreateRentDetail = () => {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <div className="mb-4">
                 <h5 className="text-gray-700 mb-3">
-<<<<<<< HEAD
                   <HomeWorkRoundedIcon /> Select Your Facility
-=======
-                  <HomeWorkRoundedIcon /> Select Your Real Estate
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 </h5>
                 <TextField
                   select
@@ -198,7 +143,6 @@ const CreateRentDetail = () => {
                   name="realEstate"
                   color="tertiary"
                 >
-<<<<<<< HEAD
                   {allContracts?.map((contract) =>
                     contract.realEstate ? (
                       <MenuItem key={contract._id} value={contract.realEstate._id}>
@@ -206,17 +150,6 @@ const CreateRentDetail = () => {
                       </MenuItem>
                     ) : null
                   )}
-=======
-                  {allContracts?.map((contract) => (
-                    <MenuItem
-                      key={contract._id}
-                      value={contract.realEstate._id}
-                      className=""
-                    >
-                      {contract.realEstate.title}
-                    </MenuItem>
-                  ))}
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                 </TextField>
               </div>
               <div className="flex flex-col items-center md:items-start">
@@ -225,11 +158,7 @@ const CreateRentDetail = () => {
                 </h5>
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <TextField
-<<<<<<< HEAD
                     label="User"
-=======
-                    label="Tenant"
->>>>>>> 4786f39bb399142a28edc51e6a1b9c61edc071b0
                     value={contractForm.tenantName}
                     color="tertiary"
                     sx={{ width: "300px" }}
